@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Climate Guessing Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Start Screen -->
+  <div id="start-screen" class="screen">
+    <h1>Welcome to the Climate Guessing Game!</h1>
+    <input type="text" id="player-name" placeholder="Enter your name" />
+    <button id="start-game">Start Game</button>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="game-screen" class="screen hidden">
+    <h2 id="question-text"></h2>
+    <img id="question-image" src="" alt="Question Clue" class="question-image">
+    <div id="options-container" class="options-container"></div>
+    <p id="feedback"></p>
+  </div>
+
+  <!-- Game Over Screen -->
+  <div id="game-over-screen" class="screen hidden">
+    <h2>Game Over!</h2>
+    <p id="final-score"></p>
+    <button id="restart-game">Play Again</button>
+  </div>
+
+  <!-- Music Control -->
+  <div id="music-controls">
+    <button id="play-music">Play Music</button>
+    <button id="pause-music" class="hidden">Pause Music</button>
+  </div>
+  <audio id="background-music" loop>
+    <source src="backgroundmusic.mp3" type="audio/mp3">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
